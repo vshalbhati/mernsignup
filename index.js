@@ -5,8 +5,6 @@ const mongoose = require('mongoose')
 const User = require('./models/user.model')
 const jwt = require('jsonwebtoken')
 
-const PORT = process.env.PORT || 5000;
-
 const DB= 'mongodb+srv://vishal:vishalmongo@cluster0.1vajy.mongodb.net/mernsignup?retryWrites=true&w=majority'
 mongoose.connect(DB).then(()=>{
     console.log(`connection successful`);
@@ -49,6 +47,6 @@ if(process.env.NODE.ENV == "production"){
     app.use(express.static("client/build"));
 }
 
-app.listen(PORT, ()=>{
-    console.log(`Server started on sever ${PORT}`)
+app.listen(1337, ()=>{
+    console.log(`Server started on sever 1337`)
 })
