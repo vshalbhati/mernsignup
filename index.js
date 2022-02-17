@@ -5,7 +5,7 @@ const mongoose = require('mongoose')
 const User = require('./models/user.model')
 const jwt = require('jsonwebtoken')
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 const DB= 'mongodb+srv://vishal:vishalmongo@cluster0.1vajy.mongodb.net/mernsignup?retryWrites=true&w=majority'
 mongoose.connect(DB).then(()=>{
