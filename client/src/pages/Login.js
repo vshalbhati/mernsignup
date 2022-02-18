@@ -1,7 +1,6 @@
 import {useState} from 'react'
 import {Link} from 'react-router-dom'
 import './Main.css'
-import axios from 'axios';
 
 function App() {
   const [email, setEmail] = useState('')

@@ -1,12 +1,8 @@
 import {useState} from 'react'
-import { Link, Navigate, useNavigate } from 'react-router-dom'
 import './Main.css'
-import axios from 'axios';
-
 
 
 function App() {
-  const navigate = useNavigate()
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')

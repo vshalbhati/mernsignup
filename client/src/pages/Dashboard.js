@@ -1,8 +1,7 @@
-import React,{useEffect} from 'react'
-import { Navigate , useNavigate, Link } from 'react-router-dom'
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Dashboard() {
-  const navigate = useNavigate()
   return (
     <div className='homepage'>
         <h1>Hii User!</h1>
