@@ -13,7 +13,7 @@ function App() {
 
   async function registerUser(event){
     event.preventDefault()
-    const response = await axios.post('/api/register',{
+    const response = await axios.post('/register',{
       method: 'post',
     headers:{
         'Content-Type': 'application/json',

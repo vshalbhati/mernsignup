@@ -9,7 +9,7 @@ function App() {
 
   async function loginUser(event){
     event.preventDefault()
-    const response = await axios.post('/api/login',{
+    const response = await axios.post('/login',{
       method: 'post',
     headers:{
         'Content-Type': 'application/json',
