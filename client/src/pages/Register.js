@@ -9,7 +9,7 @@ function App() {
 
   async function registerUser(event){
     event.preventDefault()
-    const response = await fetch(`${process.env.REACT_APP_API_URL}/register`,{
+    const response = await fetch("https://mernsignup.herokuapp.com/register",{
       method: 'post',
     headers:{
         'Content-Type': 'application/json',
