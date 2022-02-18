@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import {Link} from 'react-router-dom'
 import './Main.css'
+import axios from 'axios';
 
 function App() {
   const [email, setEmail] = useState('')
@@ -8,7 +9,7 @@ function App() {
 
   async function loginUser(event){
     event.preventDefault()
-    const response = await fetch('http://localhost:1337/api/login',{
+    const response = await axios.post('/api/login',{
       method: 'post',
     headers:{
         'Content-Type': 'application/json',

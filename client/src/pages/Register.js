@@ -1,6 +1,8 @@
 import {useState} from 'react'
 import { Link, Navigate, useNavigate } from 'react-router-dom'
 import './Main.css'
+import axios from 'axios';
+
 
 
 function App() {
@@ -11,7 +13,7 @@ function App() {
 
   async function registerUser(event){
     event.preventDefault()
-    const response = await fetch('http://localhost:1337/api/register',{
+    const response = await axios.post('/api/register',{
       method: 'post',
     headers:{
         'Content-Type': 'application/json',
