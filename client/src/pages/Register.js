@@ -26,9 +26,10 @@ function App() {
     })
     const data =await response.json()
     if(data.status === 'ok'){
-      Navigate('/login')
+      alert('Registered Successfully')
+      window.location.href='/'
+
     }
-    window.location.href='/'
 
   }
   return (
